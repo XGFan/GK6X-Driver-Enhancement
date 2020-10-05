@@ -231,13 +231,13 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                     e.style.setProperty("left", "1rem", "important"), e.style.setProperty("bottom", "3rem", "important")
                 }, showConfig: function (e) {
                     var t = $("conf_showbox");
-                    if (1 != DEVICE.currentProfile.ModeIndex) {
+                    // if (1 != DEVICE.currentProfile.ModeIndex) {
                         var i = $("key" + e), o = {KeyFUNC: "", KeyLE: ""};
                         o.KeyFUNC = i.getAttribute("data-func"), o.KeyLE = i.getAttribute("data-le"), $("config_key").innerText = o.KeyFUNC ? o.KeyFUNC : this.$t("common.key_func_no_config"), $("config_le") && ($("config_le").innerText = o.KeyLE ? o.KeyLE : this.$t("common.key_le_no_config")), $("config_key").setAttribute("data-key", e);
                         var a = i.offsetWidth, l = i.offsetLeft, n = i.offsetTop, s = t.offsetWidth, r = t.offsetHeight,
                             c = l + a / 2 - s / 2, d = n - r;
                         t.style.setProperty("left", c + "px", "important"), t.style.setProperty("top", d + "px", "important"), t.style.setProperty("visibility", "visible", "important")
-                    }
+                    // }
                 }, hideConfig: function () {
                     var e = $("conf_showbox");
                     e && e.style.setProperty("visibility", "hidden", "important")
