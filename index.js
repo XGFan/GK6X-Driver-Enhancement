@@ -3447,6 +3447,7 @@ webpackJsonp([18], [, , , , , , , , , , function (A, e, t) {
 }, function (A, e, t) {
     "use strict";
     var i = t(20), o = t.n(i), n = t(72), r = t.n(n), l = t(64), a = t.n(l);
+    var lastSuccessKeySet = [];
     window.cms = {accountID: 0}, window.callCMS = function (A, e, t, i) {
         var o = {funcname: A};
         for (var n in e) o[n] = e[n];
@@ -3530,7 +3531,12 @@ webpackJsonp([18], [, , , , , , , , , , function (A, e, t) {
             var i = {AccoutID: cms.accountID, ModelID: A, GUID: e};
             callCMS("ReadProfile", i, function (A) {
                 var e = JSON.parse(A);
-                console.log(i,e)
+                if (e.KeySet === undefined || e.KeySet.length === 0) {
+                    e.KeySet = lastSuccessKeySet
+                } else {
+                    lastSuccessKeySet = e.KeySet
+                }
+                console.log(i, e)
                 t(e)
             })
         }
