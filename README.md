@@ -8,4 +8,4 @@
 C:\Program Files (x86)\GK6XPlus Driver\CMSEngine\driver
 ```
 
-**目前只在GX64xs上测试过**
+**目前只在GK64xs上测试过**
