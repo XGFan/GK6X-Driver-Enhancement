@@ -242,7 +242,6 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                     e && e.style.setProperty("visibility", "hidden", "important")
                 }, handleKeyClick: function (e) {
                     var t = this;
-                    if (1 == DEVICE.currentProfile.ModeIndex) return void t.alertInfo(t.$t("common.std_key_func_not_edit"), "warning", 1e3);
                     if (0 === e) return void t.alertInfo(t.$t("common.fn_not_edit"), "warning", 1e3);
                     var i = !1, o = DEVICE.currentProfile.KeySet;
                     t.isfnkeyset && (o = DEVICE.currentProfile.FnKeySet);
