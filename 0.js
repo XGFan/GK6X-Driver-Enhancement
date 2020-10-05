@@ -211,11 +211,12 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                         a && (a.classList.remove("seted"), a.classList.remove("fnseted"), a.setAttribute("data-func", ""), a.setAttribute("data-le", ""), a.innerHTML = "<span></span>", e.isfnkeyset && a.classList.add("fnseted"), DEVICE.currentProfile[t][o].MenuName && (a.children[0].classList.add("hasfunc"), a.classList.add("seted"), "0x0A010001" == DEVICE.currentProfile[t][o].DriverValue ? (a.children[0].innerHTML = i.MenuName, a.setAttribute("data-func", i.MenuName)) : (console.log(i.DriverValue), window.KeyFunc[i.DriverValue] ? (window.KeyFunc[i.DriverValue].hasOwnProperty("Icon") && a.children[0].classList.add(window.KeyFunc[i.DriverValue].Icon), window.KeyFunc[i.DriverValue].ShowClass && a.children[0].classList.add(window.KeyFunc[i.DriverValue].ShowClass), a.setAttribute("data-func", e.$t("keys")[window.KeyFunc[i.DriverValue].LangTitle]), window.KeyFunc[i.DriverValue].Icon ? a.children[0].innerHTML = "" : a.children[0].innerHTML = e.$t("keys")[window.KeyFunc[i.DriverValue].LangTitle]) : (a.setAttribute("data-func", i.MenuName), i.MenuName.length <= 5 ? a.children[0].innerHTML = i.MenuName : a.children[0].innerHTML = i.MenuName.substring(0, 4) + "..."))), DEVICE.currentProfile.KeySet[o].KeyLE && "" !== DEVICE.currentProfile.KeySet[o].KeyLE.GUID && (a.classList.add("seted"), a.setAttribute("data-le", DEVICE.currentProfile.KeySet[o].KeyLE.Name)))
                     })
                 }, initStdKeyset: function () {
-                    var e = this;
-                    window.DefaultProfiles[0].KeySet.forEach(function (e, t) {
-                        var i = $("key" + e.Index);
-                        i && (i.classList.remove("seted"), i.setAttribute("data-func", ""), i.setAttribute("data-le", ""), i.innerHTML = "<span></span>")
-                    }), CMS.deviceConfig.IsFnx && (e.hasfnx = !0, DEVICE.currentProfile.hasOwnProperty("KeySet") && (e.stdfnxval = e.device.currentProfile.KeySet[0].DriverValue.toString()))
+                    this.initKeyset()
+                    // var e = this;
+                    // window.DefaultProfiles[0].KeySet.forEach(function (e, t) {
+                    //     var i = $("key" + e.Index);
+                    //     i && (i.classList.remove("seted"), i.setAttribute("data-func", ""), i.setAttribute("data-le", ""), i.innerHTML = "<span></span>")
+                    // }), CMS.deviceConfig.IsFnx && (e.hasfnx = !0, DEVICE.currentProfile.hasOwnProperty("KeySet") && (e.stdfnxval = e.device.currentProfile.KeySet[0].DriverValue.toString()))
                 }, changeFnx: function (e) {
                     var t = this;
                     DEVICE.currentProfile.KeySet[0].DriverValue = e, t.$emit("fnxChange")
