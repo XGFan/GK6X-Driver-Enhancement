@@ -3530,6 +3530,7 @@ webpackJsonp([18], [, , , , , , , , , , function (A, e, t) {
             var i = {AccoutID: cms.accountID, ModelID: A, GUID: e};
             callCMS("ReadProfile", i, function (A) {
                 var e = JSON.parse(A);
+                console.log(i,e)
                 t(e)
             })
         }
