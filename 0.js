@@ -2586,7 +2586,7 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                     })
                 }, saveKeySet: function () {
                     var e = this;
-                    1 != DEVICE.currentProfile.ModeIndex ? (window.cprofile.KeySet = JSON.parse(a()(DEVICE.currentProfile.KeySet)), DEVICE.currentProfile.FnKeySet && (window.cprofile.FnKeySet = JSON.parse(a()(DEVICE.currentProfile.FnKeySet))), e.saveProfile()) : (console.log("标准配置灯效保存"), e.saveStdLE()), e.iskeysetchange = !1, e.isapplied = !0
+                    1 != DEVICE.currentProfile.ModeIndex ? (window.cprofile.KeySet = JSON.parse(a()(DEVICE.currentProfile.KeySet)), DEVICE.currentProfile.FnKeySet && (window.cprofile.FnKeySet = JSON.parse(a()(DEVICE.currentProfile.FnKeySet))), e.saveProfile()) : (window.cprofile.KeySet = JSON.parse(a()(DEVICE.currentProfile.KeySet)), console.log("标准配置灯效保存"), e.saveStdLE(), e.saveProfile()), e.iskeysetchange = !1, e.isapplied = !0
                 }, saveModeLE: function () {
                     var e = this;
                     1 != DEVICE.currentProfile.ModeIndex ? (console.log(a()(DEVICE.currentProfile.ModeLE)), window.cprofile.ModeLE = JSON.parse(a()(DEVICE.currentProfile.ModeLE)), e.saveProfile(), e.$refs.lelist.isbreath = !1, e.isapplied = !0) : console.log("标准配置无modelle")
