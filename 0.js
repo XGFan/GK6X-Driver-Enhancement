@@ -809,8 +809,8 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                     }, expression: "activeName"
                 }
             }, [i("div", {
-                staticClass: "disablediv",
-                class: {disablehide: 0 == e.mode || e.hasModeLe && [2, 3, 4].indexOf(e.mode) >= 0 || "2" == e.leseltype}
+                // staticClass: "disablediv",
+                // class: {disablehide: 0 == e.mode || e.hasModeLe && [2, 3, 4].indexOf(e.mode) >= 0 || "2" == e.leseltype}
             }), e._v(" "), i("template", {slot: "header"}, [i("i", {staticClass: "header-icon el-icon-kb-light3"}), e._v("  " + e._s(e.title) + " ( "), i("el-tag", [e._v(e._s(e.lelist.length))]), e._v(" )\n      ")], 1), e._v(" "), e.isstaticle ? i("div", {
                 staticStyle: {width: "100%"},
                 attrs: {id: "staticlebox"}
@@ -2203,8 +2203,8 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                 staticStyle: {padding: ".5rem"},
                 attrs: {span: 24}
             }, [i("el-card", {staticStyle: {position: "relative"}}, [i("div", {
-                staticClass: "disablediv",
-                class: {disablehide: !e.disabled}
+                // staticClass: "disablediv",
+                // class: {disablehide: !e.disabled}
             }), e._v(" "), i("template", {slot: "header"}, [i("i", {staticClass: "header-icon el-icon-document"}), e._v(" " + e._s(e.$t("macro.macro_setting_title")) + "\n      ")]), e._v(" "), i("el-input", {
                 staticClass: "input-with-select",
                 attrs: {placeholder: e.$t("common.input_search_text"), size: "mini"},
@@ -2303,8 +2303,8 @@ webpackJsonp([0, 3, 5, 7, 12, 14], {
                     bottom: "0"
                 }
             }, [i("div", {
-                staticClass: "disablediv",
-                class: {disablehide: !e.disabled}
+                // staticClass: "disablediv",
+                // class: {disablehide: !e.disabled}
             }), e._v(" "), i("el-col", {attrs: {span: 24}}, [i("el-row", [i("el-col", {attrs: {span: 24}}, [i("el-tabs", {
                 staticClass: "keyset-tab",
                 attrs: {type: "border-card", loading: "true"}
